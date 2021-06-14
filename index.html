@@ -256,7 +256,7 @@
                 <div class="row">
                     <div class="col-md-4 col-12 mt-5">
                         <h2 class="fw-bold lh-base wow animate__animated animate__faster animate__fadeInLeft"
-                            data-wow-offset="100">Freshgo
+                            data-wow-offset="100">FreshGo
                             Hadir Untuk
                             Indonesia <span class="text-teal">.</span></h2>
                         <p class=" text-body wow animate__animated animate__faster animate__fadeInLeft"
@@ -368,7 +368,7 @@
                     <div class="col-md-6 my-auto ">
                         <h2
                             class="fw-bold lh-base mb-4 text-white wow animate__animated animate__fadeInRight animate_faster">
-                            FreshGo itu sendiri<span class="text-teal">.</span></h2>
+                            Apa itu FreshGo ?<span class="text-teal">.</span></h2>
                         <p class="text-white wow animate__animated animate__fadeInRight animate_faster"
                             data-wow-delay="0.3s">Freshgo terdiri dari 2 suku kata. <span class="fw-bold">Fresh &
                                 Go</span>
@@ -413,7 +413,7 @@
                 <div class="row">
                     <div class="col-md-6 " data-wow-offset="100">
                         <h2 class="fw-bold lh-base mb-4wow animate__animated animate__fadeInLeft animate__faster ">
-                            Freshgo Supply Chain Management Concept <span class="text-teal">.</span></h2>
+                            FreshGo Supply Chain Management Concept <span class="text-teal">.</span></h2>
                         <div class="wow animate__animated animate__fadeInLeft animate__faster" data-wow-delay="0.3s">
                             <p>Membangun kemitraan dengan pemasok, dan menyeleksi pemasok yang unggul sesuai
                                 dengan
@@ -452,7 +452,7 @@
         <section class="px-md-0 px-3 pt-4 my-5 mitra">
             <div class="container">
                 <h2 class="fw-bold text-center mb-5 wow animate__animated  animate__fadeInUp" data-wow-offset="150">
-                    Mitra Freshgo <span class="text-teal">.</span></h2>
+                    Mitra FreshGo <span class="text-teal">.</span></h2>
                 <div class="row">
 
                     <div class="col-lg-4 col-md-6">
@@ -838,6 +838,7 @@
     <script defer src="./plugins/sidebar.js"></script>
     <script src="./plugins/swiper-bundle.min.js"></script>
     <script src="./plugins/wow.min.js"></script>
+
     <script>
         new WOW().init()
         var heroSlider = new Swiper('.hero-slider', {
@@ -909,6 +910,8 @@
                 delay: 3000
             },
 
+            autoHeight: true,
+
             speed: 1000,
 
             effect: 'fade',
@@ -921,6 +924,29 @@
         let copyright = document.querySelector(".copyright");
         let years = new Date
         copyright.innerHTML += `Copyright © ${years.getFullYear()} Freshgo Indonesia. All Rights Reserved`
+    </script>
+    <script src="https://getchat.app/assets/js/min/getchatapp.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var gcaMain = new GetChatApp({
+                'mobileNumber': '085316942861',
+                'titleMessage': 'Hallo',
+                'welcomeMessage': 'Hey there!🙌<br /> <br /> Get in touch with me by typing a message here. It will go straight to my phone! 🔥<br /> <br /> ~Your Name',
+                'position': 'right',
+                'platforms': {
+                    'whatsapp': true,
+                    'facebook': false,
+                    'email': false,
+                    'instagram': false,
+                    'telegram': false,
+                },
+                'facebookPageId': '',
+                'gcaEmailAddress': '',
+                'gcaEmailSubject': '',
+                'gcaInstagramUsername': '',
+                'gcaTelegramUsername': '',
+            });
+        });
     </script>
 
 </body>
