@@ -1,3 +1,9 @@
+html{
+    scroll-behavior: smooth;
+}
+a{
+    transition: .3s;
+}
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -204,7 +210,79 @@ body{
 .login-form, .reg-form{
     width: 500px;
 }
+.linear-white{
+    background: linear-gradient(90deg, rgba(73, 175, 162, 0.98), rgba(53, 105, 165, 0.8));
+}
+.opacity-50{
+    opacity: .45;
+    transition: opacity .3s;
+}
 
+.hover-opacity-1:hover{
+    opacity: 1;
+}
+
+.purpose-item:hover{
+    cursor: pointer;
+}
+.purpose-item:hover .purpose-icon{
+    opacity: 1;
+}
+
+.purpose{
+    background-image: url(../images/bg-purpose.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.bg-card-purpose{
+    transition: transform .3s ease-in-out;
+}
+.scale-bg-card-hover:hover .bg-card-purpose{
+    transform: scale(1.1);
+}
+.card{
+    transition: background-color .3s;
+}
+.card:hover{
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+.popup{
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+    background-color: #3333338f;
+    transition: .3s;
+}
+.card.product:hover .popup{
+    visibility: visible;
+    display: flex;
+    opacity: 1;
+}
+.hover-bg-light-darken:hover{
+    background-color: rgb(172, 198, 255) !important;
+}
+.form-control.custom{
+    background-color: #f5f5f5;
+    border: none;
+    padding: 15px 20px;
+}
+
+.whatsapp-button{
+    z-index: 2000 !important;
+}
+
+.content-blog{
+    background-color: rgba(51, 51, 51, 0.521);
+}
+
+.fs-blog{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.003em
+}
 @media only screen and (min-width: 768px) {
     .bg-hero{
         background-attachment: fixed;

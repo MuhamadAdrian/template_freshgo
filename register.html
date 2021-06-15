@@ -42,14 +42,9 @@
     </div>
     <div class="d-flex align-items-center justify-content-center min-vh-100 mt-md-0 mt-5">
         <div class="container login-form px-md-0 px-3">
-            <div class="row">
-                <div class="col-lg-3">
-                    <img width="150px" class="mb-4" height="auto" src="./images/logo-freshgo-new.png" alt="">
-                </div>
-                <div class="col-lg-9">
+            <div class="d-flex align-items-start justify-content-between">
 
-                    <h2 class="fs-4 fw-bold text-right text-end">Register</h2>
-                </div>
+                <img width="150px" class="mb-4 mx-auto" height="auto" src="./images/logo-freshgo-new.png" alt="">
             </div>
             <div class="d-flex align-items-start justify-content-between">
                 <div class="mr-3">
@@ -58,40 +53,43 @@
 
             <form method="post" action="#">
                 <div class="mb-3">
-                    <label for="nama_lengkap" class="form-label fs-7 fw-bold">Nama Lengkap</label>
-                    <input type="text" class="form-control fs-7 form-padding" id="nama_lengkap"
-                        placeholder="name@example.com">
+                    <label style="display: none;" for="nama_lengkap" class="form-label fs-7 fw-bold"></label>
+                    <input type="text" class="form-control custom rounded-pill fs-7 form-padding" id="nama_lengkap"
+                        placeholder="Nama Lengkap">
                 </div>
                 <div class="mb-3">
-                    <label for="no_telp" class="form-label fs-7 fw-bold">No Telepon</label>
-                    <input type="number" class="form-control fs-7 form-padding" id="no_telp" placeholder="0821xxxxxxxx">
+                    <label style="display: none;" for="no_telp" class="form-label fs-7 fw-bold"></label>
+                    <input type="number" class="form-control custom rounded-pill fs-7 form-padding" id="no_telp"
+                        placeholder="Nomor Telepon">
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label fs-7 fw-bold">Email</label>
-                    <input type="email" class="form-control fs-7 form-padding" id="email" placeholder="you@gmail.com">
+                    <label style="display: none;" for="email" class="form-label fs-7 fw-bold"></label>
+                    <input type="email" class="form-control custom rounded-pill fs-7 form-padding" id="email"
+                        placeholder="Email">
                 </div>
                 <div class="row row-cols-md-2">
                     <div class="col-md-6">
                         <div class="mb-3">
-                            <label for="password" class="form-label fs-7 fw-bold">Password</label>
-                            <input type="password" class="form-control fs-7 form-padding" id="password">
+                            <label style="display: none;" for="password" class="form-label fs-7 fw-bold"></label>
+                            <input type="password" class="form-control custom rounded-pill fs-7 form-padding"
+                                id="password" placeholder="Password">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="mb-3">
-                            <label for="password" class="form-label fs-7 fw-bold">Ulangi
-                                Password</label>
-                            <input type="password" class="form-control fs-7 form-padding" id="password">
+                            <label style="display: none;" for="password" class="form-label fs-7 fw-bold"></label>
+                            <input type="password" class="form-control custom rounded-pill fs-7 form-padding"
+                                id="password" placeholder="Ulangi Password">
                         </div>
                     </div>
                 </div>
                 <div class="">
                     <button type="submit"
-                        class="btn form-padding bg-teal hover-teal-darken w-100 text-white">Daftar</button>
+                        class="btn form-padding bg-teal hover-teal-darken w-100 text-white rounded-pill">Daftar</button>
                 </div>
             </form>
 
-            <a href="login.html" class="fs-8 text-teal-darken text-end d-block mt-2">Sudah Punya Akun? Login</a>
+            <a href="login.html" class="fs-8 text-teal text-end d-block mt-2">Sudah Punya Akun? Login</a>
 
         </div>
     </div>

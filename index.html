@@ -93,6 +93,7 @@
         </nav>
         <!--NAVBAR SECTION-->
     </header>
+
     <!--FAB-->
     <div class="fab d-md-none d-block position-fixed bottom-0 end-0 p-3">
         <button id="fab" class="btn rounded-circle p-3 bg-teal text-white shadow">
@@ -103,6 +104,7 @@
         </button>
     </div>
     <!--FAB-->
+
     <!--Mobile SideBar-->
     <aside class="d-md-none">
         <!--OVERLAY-->
@@ -190,6 +192,19 @@
         <!--SIDEBAR-CONTENT-->
     </aside>
     <!--Mobile SideBar-->
+
+    <!-- Whatsapp Button -->
+    <div class="position-fixed bottom-0 end-0 m-3 whatsapp-button">
+        <a target="blank"
+            href="https://web.whatsapp.com/send?phone=+62 813-2132-5770&text=%F0%9F%91%8B%20Permsisi, saya ingin memesan ini..  %0A%0A %0A Nama Barang :  %0A Jumlah : %0A Atas Nama : %0A Alamat :  %0A Catatan Tambahan : "
+            class="bg-teal p-4 d-block rounded-circle text-white shadow hover-teal-darken">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+            </svg>
+        </a>
+    </div>
+    <!-- Whatsapp Button -->
     <main class="position-relative overflow-hidden">
         <!--HERO SECTION-->
         <section class="px-md-0 px-3 pt-5 bg-hero">
@@ -327,11 +342,15 @@
                             </div>
                         </section>
                     </div>
-                    <div class="col-md-8 col-12">
+                    <div class="col-md-8 col-12 d-md-block d-none">
                         <img class="img-fluid wow animate__animated animate__backInRight" data-wow-delay="0.3s"
                             width="100%" height="100%" src="./images/map-indo.png" alt="Peta Indonesia Freshgo">
-                        <h2 class="fw-bold mt-5 fs-3 lh-base text-end">Menjangkau lebih dari <span
-                                class="fs-2 text-teal">20</span> Kota
+                    </div>
+                </div>
+                <div class="row wow animate__animated animate__fadeInUp animate__faster" data-wow-offset="100">
+                    <div class="col-12">
+                        <h2 class="fw-bold mt-5 lh-base text-center display-4">Menjangkau lebih dari <span
+                                class="display-3 fw-bold text-teal">20</span> Kota
                             di
                             Indonesia <span class="text-teal">.</span>
                         </h2>
@@ -340,13 +359,13 @@
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <p class="text-end fs-3 fw-bold text-teal">Bandung</p>
+                                    <p class="text-end fw-bold text-teal text-center display-3">Bandung</p>
                                 </div>
                                 <div class="swiper-slide">
-                                    <p class="text-end fs-3 fw-bold text-teal">Jakarta</p>
+                                    <p class="text-end fw-bold text-teal text-center display-3">Jakarta</p>
                                 </div>
                                 <div class="swiper-slide">
-                                    <p class="text-end fs-3 fw-bold text-teal">Tasikmalaya</p>
+                                    <p class="text-end fw-bold text-teal text-center display-3">Tasikmalaya</p>
                                 </div>
                             </div>
                         </div>
@@ -355,6 +374,145 @@
             </div>
         </section>
         <!--PESEBARAN FRESHGO-->
+
+        <!--Showcase Product-->
+        <section class="px-md-0 px-3 py-5">
+            <div class="container">
+                <h2 class="fw-bold">Promo Produk</h2>
+                <div class="row flex-md-row-reverse">
+                    <div class="col-md-5 mb-4">
+                        <h2 class="fw-bold mb-3 fs-3 text-teal-darken">Buah & Sayur yang Fresh & Go untuk diantar
+                            <span class="text-teal">.</span>
+                        </h2>
+                        <p>Kami menampilkan beberapa produk unggulan kami dan kamu bisa memesannya melalui WA call
+                            center kami
+                        </p>
+                        <button
+                            class="btn bg-dark-teal bg-dark-teal-hover px-4 py-3 text-white rounded-pill mt-3 wow animate__animated animate__fadeInUp animate_faster"
+                            data-wow-offset="0.8" href="#">
+                            <span class="mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                                </svg>
+                            </span>
+                            Whatsapp
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                                    fill="currentColor">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="col-md-7">
+                        <p class="fs-8 fst-italic text-muted d-md-none">*Tekan & tahan produk untuk memesan</p>
+                        <div class="row g-3">
+                            <div class="col-lg-4 col-sm-6">
+                                <div
+                                    class="card product border-0 shadow-sm scale-bg-card-hover mb-3 wow animate__animated animate__fadeInUp animate__fast">
+                                    <div class="overflow-hidden bg-light rounded-3 position-relative">
+                                        <img height="200px" src="./images/bg-hero.jpg"
+                                            class="card-img-top object-cover-center bg-card-purpose" alt="...">
+                                        <div
+                                            class="popup position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                            <div>
+
+                                                <a target="blank"
+                                                    href="https://web.whatsapp.com/send?phone=+62 813-2132-5770&text=%F0%9F%91%8B%20Permisi, saya ingin memesan ini...  %0A%0A %0A Nama Barang : Buah Mangga %0A Jumlah : %0A Atas Nama : %0A Alamat :  %0A Catatan Tambahan : "
+                                                    class="card-link text-decoration-none hover-bg-light-darken bg-light px-3 py-2 rounded-3 fs-7">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                        fill="currentColor" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                                                    </svg>
+                                                    <span>Pesan </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-6">Mangga Gatau</h5>
+                                        <p class="card-text text-truncate fs-7">Description...</p>
+                                        <p class="mb-2">Rp. 39.000/kg</p>
+                                        <p><span class="text-white bg-warning py-2 rounded-3 px-3 fs-8">Hampir
+                                                habis</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div
+                                    class="card product border-0 shadow-sm scale-bg-card-hover mb-3 wow animate__animated animate__fadeInUp animate__fast">
+                                    <div class=" overflow-hidden bg-light rounded-3 position-relative">
+                                        <img height="200px" src="./images/bg-hero.jpg"
+                                            class="card-img-top object-cover-center bg-card-purpose" alt="...">
+                                        <div
+                                            class="popup position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                            <div>
+
+                                                <a target="blank"
+                                                    href="https://web.whatsapp.com/send?phone=+62 813-2132-5770&text=%F0%9F%91%8B%20Hi, saya ingin memesan ini...  %0A%0A %0A Nama Barang : Buah Mangga %0A Jumlah : %0A Atas Nama : %0A Alamat :  %0A Catatan Tambahan : "
+                                                    class="card-link text-decoration-none hover-bg-light-darken bg-light px-3 py-2 rounded-3 fs-7">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                        fill="currentColor" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                                                    </svg>
+                                                    <span>Pesan </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-6">Mangga Gatau</h5>
+                                        <p class="card-text text-truncate fs-7">Description...</p>
+                                        <p class="mb-2">Rp. 39.000/kg</p>
+                                        <p><span class="text-white bg-teal py-2 rounded-3 px-3 fs-8">Tersedia</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div
+                                    class="card product border-0 shadow-sm scale-bg-card-hover mb-3 wow animate__animated animate__fadeInUp animate__fast">
+                                    <div class=" overflow-hidden bg-light rounded-3 position-relative">
+                                        <img height="200px" src="./images/bg-hero.jpg"
+                                            class="card-img-top object-cover-center bg-card-purpose" alt="...">
+                                        <div
+                                            class="popup position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                            <div>
+
+                                                <a target="blank"
+                                                    href="https://web.whatsapp.com/send?phone=+62 813-2132-5770&text=%F0%9F%91%8B%20Hi, saya ingin memesan ini...  %0A%0A %0A Nama Barang : Buah Mangga %0A Jumlah : %0A Atas Nama : %0A Alamat :  %0A Catatan Tambahan : "
+                                                    class="card-link text-decoration-none hover-bg-light-darken bg-light px-3 py-2 rounded-3 fs-7">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                        fill="currentColor" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                                                    </svg>
+                                                    <span>Pesan </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-6">Mangga Gatau</h5>
+                                        <p class="card-text text-truncate fs-7">Description...</p>
+                                        <p class="mb-2">Rp. 39.000/kg</p>
+                                        <p><span class="text-white bg-danger py-2 rounded-3 px-3 fs-8">Habis</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Showcase Product-->
 
         <!--freshgo-->
         <section class="py-5 px-md-0 px-3 join">
@@ -525,6 +683,68 @@
             </div>
         </section>
         <!--Mitra Freshgo-->
+
+        <!--Untuk Berbagai Tujuan-->
+        <section class="px-md-0 px-3 py-4 purpose">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 my-auto">
+                        <h2
+                            class="fw-bold display-3 mb-5 text-teal-darken wow animate__animated animate__fadeInLeft animate__fast">
+                            Untuk Berbagai Tujuan Kebutuhan Anda</h2>
+                        <p class="fs-2 lh-base text-teal-darken wow animate__animated animate__fadeInLeft animate__fast"
+                            data-wow-delay="0.2s">Kami juga melayani bebagai kebutuhan Anda lainnya</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div
+                            class="bg-light rounded-3 position-relative overflow-hidden scale-bg-card-hover mb-3 wow animate__animated animate__fadeInUp animate__fast">
+                            <img class="position-absolute w-100 h-100 object-cover-center bg-card-purpose"
+                                src="./images/bg-purpose-1.jpeg" alt="patternpad">
+                            <div class="position-relative p-4 linear-white text-white purpose-item">
+                                <h3 class="fs-5 fw-bold">Corporate Purpose</h3>
+                                <p>Kebutuhan atas perusahaan atau bisnis</p>
+                                <img class="position-absolute end-0 bottom-0 p-3 purpose-icon opacity-50 hover-opacity-1"
+                                    width="100px" src="./images/rantai.png" alt="Corporate">
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-3 position-relative overflow-hidden scale-bg-card-hover mb-3 wow animate__animated animate__fadeInUp animate__fast"
+                            data-wow-delay="0.2">
+                            <img class="position-absolute w-100 h-100 object-cover-center bg-card-purpose"
+                                src="./images/bg-purpose-2.jpeg" alt="patternpad">
+                            <div class="position-relative p-4 linear-white text-white purpose-item">
+                                <h3 class="fs-5 fw-bold">Hotel</h3>
+                                <p>Siap antar untuk kebutuhan hotel</p>
+                                <img class="purpose-icon position-absolute end-0 bottom-0 p-3 opacity-50 hover-opacity-1"
+                                    width="100px" src="./images/hotel.png" alt="Hotel">
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-3 position-relative overflow-hidden scale-bg-card-hover mb-3 wow animate__animated animate__fadeInUp animate__fast"
+                            data-wow-delay="0.4">
+                            <img class="position-absolute w-100 h-100 object-cover-center bg-card-purpose"
+                                src="./images/bg-purpose-3.jpeg" alt="patternpad">
+                            <div class="position-relative p-4 linear-white text-white purpose-item">
+                                <h3 class="fs-5 fw-bold">Restaurant</h3>
+                                <p>Kami menyediakan kebutuhan yang tentunya segar untuk restaurant</p>
+                                <img class="position-absolute end-0  purpose-icon bottom-0 p-3 opacity-50 hover-opacity-1"
+                                    width="100px" src="./images/resta.png" alt="Restaurant">
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-3 position-relative overflow-hidden scale-bg-card-hover mb-3 wow animate__animated animate__fadeInUp animate__fast"
+                            data-wow-delay="0.6">
+                            <img class="position-absolute w-100 h-100 object-cover-center bg-card-purpose"
+                                src="./images/bg-purpose-4.jpeg" alt="patternpad">
+                            <div class="position-relative p-4 linear-white text-white purpose-item">
+                                <h3 class="fs-5 fw-bold">Catering</h3>
+                                <p>Kebutuhan untuk catering dan sebagainya</p>
+                                <img class="position-absolute end-0 bottom-0 p-3 purpose-icon opacity-50 hover-opacity-1"
+                                    width="100px" src="./images/catering.png" alt="Catering">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Untuk Berbagai Tujuan-->
 
         <!--Testimoni-->
         <section class="py-5 my-5 px-md-0 px-3">
@@ -925,30 +1145,6 @@
         let years = new Date
         copyright.innerHTML += `Copyright © ${years.getFullYear()} Freshgo Indonesia. All Rights Reserved`
     </script>
-    <script src="https://getchat.app/assets/js/min/getchatapp.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var gcaMain = new GetChatApp({
-                'mobileNumber': '085316942861',
-                'titleMessage': 'Hallo',
-                'welcomeMessage': 'Hey there!🙌<br /> <br /> Get in touch with me by typing a message here. It will go straight to my phone! 🔥<br /> <br /> ~Your Name',
-                'position': 'right',
-                'platforms': {
-                    'whatsapp': true,
-                    'facebook': false,
-                    'email': false,
-                    'instagram': false,
-                    'telegram': false,
-                },
-                'facebookPageId': '',
-                'gcaEmailAddress': '',
-                'gcaEmailSubject': '',
-                'gcaInstagramUsername': '',
-                'gcaTelegramUsername': '',
-            });
-        });
-    </script>
-
 </body>
 
 </html>
