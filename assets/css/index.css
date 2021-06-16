@@ -230,10 +230,10 @@ body{
 }
 
 .purpose{
-    background-image: url(../../assets/img/bg-purpose.png);
-    background-size: cover;
+    background-image: url(../../assets/img/bg-purpose-5.png);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: left;
+    background-size: cover;
 }
 
 .bg-card-purpose{
