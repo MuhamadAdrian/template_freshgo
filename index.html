@@ -12,16 +12,15 @@
     <meta name="author" content="Freshgo Indonesia">
     <meta name="title" content="Freshgo Indonesia | Farm Supplies & Online Groceries Indonesia">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link preload
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style/index.css" />
-    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./style/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css" />
 
     <title>Freshgo Indonesia | Farm Supplies & Online Groceries Indonesia</title>
 </head>
@@ -31,7 +30,9 @@
         <!--NAVBAR SECTION-->
         <nav class="d-flex justify-content-between align-items-center container">
             <div class="logo">
-                <img src="./images/logo-freshgo-new.png" width="100px" height="100%" alt="Freshgo Indonesia">
+                <img src="./assets/img/logo-freshgo-new.png" class="d-md-block d-none" width="100px" height="100%"
+                    alt="Freshgo Indonesia">
+                <img src="./assets/img/favicon.png" class="d-md-none" width="30px" alt="Freshgo Indonesia">
             </div>
             <ul class="list-unstyled align-items-center mb-0 d-md-flex d-none">
                 <li class="me-3">
@@ -53,20 +54,22 @@
                         <div class="container">
                             <li class="dropdown-item animated d-flex align-items-center">
                                 <div>
-                                    <img width="30px" height="30px" src="./images/freshgo-cloud-warehouse.svg"
+                                    <img width="30px" height="30px" src="./assets/img/freshgo-cloud-warehouse.svg"
                                         alt="Cloud Warehouse">
                                 </div><a class="nav-link md-fs-8 text-body" href="">Mitra Freshgo Cloud
                                     Warehouse</a>
                             </li>
                             <li class="dropdown-item animated d-flex align-items-center">
                                 <div>
-                                    <img width="30px" height="30px" src="./images/freshgo-reseller.svg" alt="Reseller">
+                                    <img width="30px" height="30px" src="./assets/img/freshgo-reseller.svg"
+                                        alt="Reseller">
 
                                 </div>
                                 <a class="nav-link md-fs-8 text-body" href="">Mitra Freshgo Reseller</a>
                             </li>
                             <li class="dropdown-item animated d-flex align-items-center">
-                                <div><img width="30px" height="30px" src="./images/freshgo-umkm.svg" alt="umkm"></div>
+                                <div><img width="30px" height="30px" src="./assets/img/freshgo-umkm.svg" alt="umkm">
+                                </div>
                                 <a class="nav-link md-fs-8 text-body" href="">Mitra Freshgo UMKM</a>
                             </li>
                         </div>
@@ -111,10 +114,15 @@
         <div class="position-fixed overlay-sidebar start-0 end-0 w-100 h-100"></div>
         <!--OVERLAY-->
         <!--SIDEBAR-CONTENT-->
-        <div class="sidebar w-75 h-100 fixed-top bg-white">
-            <ul class="list-unstyled align-items-center mb-0 bottom-0 position-relative">
+        <div class="sidebar w-75 h-100 fixed-top bg-white overflow-scroll">
+
+
+            <div class="p-4 fw-bold text-teal">
+                FreshGo Indonesia
+            </div>
+            <ul class="list-unstyled align-items-center mb-0 bottom-0">
                 <li class="nav-item active">
-                    <a class="nav-link text-body hover-teal fs-7 rounded-1 py-3 text-muted active" href="#"><span><svg
+                    <a class="nav-link hover-teal fs-7 rounded-1 py-3 text-dark active" href="#"><span><svg
                                 xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
                                 fill="currentColor">
                                 <path d="M0 0h24v24H0z" fill="none" />
@@ -122,50 +130,48 @@
                             </svg></span> Beranda</a>
                 </li>
                 <li class="nav-item dropdown-mobile">
-                    <p class="
-                    d-block
-                    text-start
-                mb-0
-                btn
-                text-body
-                hover-teal
-                fs-7
-                rounded-1
-                py-3 text-muted
-              ">
-                        <span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
-                                fill="currentColor">
-                                <path d="M0 0h24v24H0z" fill="none" />
-                                <path
-                                    d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
-                            </svg></span>
-                        Kemitraan <span>
-                            <span><svg class="arrow" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
-                                    width="24">
-                                    <path d="M0 0h24v24H0V0z" fill="none" />
-                                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
-                                </svg></span>
-                    </p>
+                    <div
+                        class="d-flex nav-link text-dark fs-7 hover-teal py-3 align-items-center justify-content-between">
+                        <div class="text-link">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                                    fill="currentColor">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                                </svg>
+                            </span>
+                            Kemitraan
+                        </div>
+                        <div class="icon-arrow"></div>
+                        <span>
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
+                                width="24">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+                            </svg>
+                        </span>
+                    </div>
                     <ul class="border-0 dropdown-mobile-menu">
                         <div class="container">
                             <li class="animated d-flex align-items-center">
-                                <a class="nav-link fs-7 text-body py-3 text-muted hover-teal" href="">Mitra Freshgo
+                                <a class="nav-link fs-7 text-body py-3 text-dark hover-teal" href="">Mitra Freshgo
                                     Cloud
                                     Warehouse</a>
                             </li>
                             <li class="animated d-flex align-items-center">
-                                <a class="nav-link fs-7 text-body py-3 text-muted hover-teal" href="">Mitra Freshgo
+                                <a class="nav-link fs-7 text-body py-3 text-dark hover-teal" href="">Mitra Freshgo
                                     Reseller</a>
                             </li>
                             <li class="animated d-flex align-items-center">
-                                <a class="nav-link fs-7 text-body py-3 text-muted hover-teal" href="">Mitra Freshgo
+                                <a class="nav-link fs-7 text-body py-3 text-dark hover-teal" href="">Mitra Freshgo
                                     UMKM</a>
                             </li>
                         </div>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-body hover-teal fs-7 rounded-1 py-3 text-muted" href="#"> <span><svg
+                    <a class="nav-link hover-teal fs-7 rounded-1 py-3 text-dark" href="#"> <span><svg
                                 xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
                                 fill="currentColor">
                                 <path d="M0 0h24v24H0z" fill="none" />
@@ -174,7 +180,7 @@
                             </svg></span> Tentang Kami</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-body hover-teal fs-7 rounded-1 py-3 text-muted" href="#"> <span><svg
+                    <a class="nav-link hover-teal fs-7 rounded-1 py-3 text-dark" href="#"> <span><svg
                                 xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
                                 fill="currentColor">
                                 <path d="M0 0h24v24H0z" fill="none" />
@@ -182,10 +188,19 @@
                                     d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z" />
                             </svg></span> Blog</a>
                 </li>
-                <li class="nav-item">
-                    <button class="nav-link btn bg-teal hover-teal-darken text-white fs-7 rounded-1 ms-3" href="#">Join
-                        To
-                        Ecosystem</button>
+                <li class="nav-item position-fixed bottom-0 left-0 w-100">
+                    <a class="nav-link bg-dark-teal-hover fs-7 text-white py-3 bg-teal d-flex align-items-center justify-content-between"
+                        href="#">
+                        <span>Join To Ecosystem</span>
+
+                        <span class="ml-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                                fill="currentColor">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z" />
+                            </svg>
+                        </span>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -194,7 +209,7 @@
     <!--Mobile SideBar-->
 
     <!-- Whatsapp Button -->
-    <div class="position-fixed bottom-0 end-0 m-3 whatsapp-button">
+    <div class="position-fixed d-none d-md-block bottom-0 end-0 m-3 whatsapp-button">
         <a target="blank"
             href="https://web.whatsapp.com/send?phone=+62 813-2132-5770&text=%F0%9F%91%8B%20Permsisi, saya ingin memesan ini..  %0A%0A %0A Nama Barang :  %0A Jumlah : %0A Atas Nama : %0A Alamat :  %0A Catatan Tambahan : "
             class="bg-teal p-4 d-block rounded-circle text-white shadow hover-teal-darken">
@@ -205,6 +220,7 @@
         </a>
     </div>
     <!-- Whatsapp Button -->
+
     <main class="position-relative overflow-hidden">
         <!--HERO SECTION-->
         <section class="px-md-0 px-3 pt-5 bg-hero">
@@ -241,7 +257,7 @@
                                 </svg></span></button>
                     </div>
                     <div class="col-md-6 my-md-auto wow animate__animated animate__jackInTheBox" data-wow-delay="0.5s">
-                        <img class="img-fluid mb-md-0 mb-5" src="./images/petani.png" alt="">
+                        <img class="img-fluid mb-md-0 mb-5" src="./assets/img/petani.png" alt="">
                     </div>
 
 
@@ -265,6 +281,7 @@
             </div>
         </section>
         <!-- KOLABORASI -->
+
         <!--PESEBARAN FRESHGO-->
         <section class="px-md-0 px-3 py-4 mb-4">
             <div class="container">
@@ -287,7 +304,7 @@
                                             data-wow-delay="0.1s">
                                             <div class="d-flex align-items-center p-1 slide-on-hover">
                                                 <div class="image">
-                                                    <img src="./images/shipped.svg" width="50px" height="50px"
+                                                    <img src="./assets/img/shipped.svg" width="50px" height="50px"
                                                         alt="Gratis Ongkir">
                                                 </div>
                                                 <div class="content-benefits ms-3 text-white">
@@ -301,7 +318,7 @@
                                             data-wow-delay="0.2s">
                                             <div class="d-flex align-items-center p-1 slide-on-hover">
                                                 <div class="image">
-                                                    <img src="./images/guarante.svg" width="50px" height="50px"
+                                                    <img src="./assets/img/guarante.svg" width="50px" height="50px"
                                                         alt="guarantee">
                                                 </div>
                                                 <div class="content-benefits ms-3 text-white">
@@ -315,7 +332,7 @@
                                             data-wow-delay="0.3s">
                                             <div class="d-flex align-items-center p-1 slide-on-hover">
                                                 <div class="image">
-                                                    <img src="./images/credit-card.svg" width="50px" height="50px"
+                                                    <img src="./assets/img/credit-card.svg" width="50px" height="50px"
                                                         alt="kartu kredit">
                                                 </div>
                                                 <div class="content-benefits ms-3 text-white">
@@ -328,7 +345,7 @@
                                             data-wow-delay="0.4s">
                                             <div class="d-flex align-items-center p-1 slide-on-hover">
                                                 <div class="image">
-                                                    <img src="./images/cs.svg" width="50px" height="50px"
+                                                    <img src="./assets/img/cs.svg" width="50px" height="50px"
                                                         alt="cutomer service">
                                                 </div>
                                                 <div class="content-benefits ms-3 text-white">
@@ -344,7 +361,7 @@
                     </div>
                     <div class="col-md-8 col-12 d-md-block d-none">
                         <img class="img-fluid wow animate__animated animate__backInRight" data-wow-delay="0.3s"
-                            width="100%" height="100%" src="./images/map-indo.png" alt="Peta Indonesia Freshgo">
+                            width="100%" height="100%" src="./assets/img/map-indo.png" alt="Peta Indonesia Freshgo">
                     </div>
                 </div>
                 <div class="row wow animate__animated animate__fadeInUp animate__faster" data-wow-offset="100">
@@ -414,7 +431,7 @@
                                 <div
                                     class="card product border-0 shadow-sm scale-bg-card-hover mb-3 wow animate__animated animate__fadeInUp animate__fast">
                                     <div class="overflow-hidden bg-light rounded-3 position-relative">
-                                        <img height="200px" src="./images/bg-hero.jpg"
+                                        <img height="200px" src="./assets/img/bg-hero.jpg"
                                             class="card-img-top object-cover-center bg-card-purpose" alt="...">
                                         <div
                                             class="popup position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
@@ -447,7 +464,7 @@
                                 <div
                                     class="card product border-0 shadow-sm scale-bg-card-hover mb-3 wow animate__animated animate__fadeInUp animate__fast">
                                     <div class=" overflow-hidden bg-light rounded-3 position-relative">
-                                        <img height="200px" src="./images/bg-hero.jpg"
+                                        <img height="200px" src="./assets/img/bg-hero.jpg"
                                             class="card-img-top object-cover-center bg-card-purpose" alt="...">
                                         <div
                                             class="popup position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
@@ -479,7 +496,7 @@
                                 <div
                                     class="card product border-0 shadow-sm scale-bg-card-hover mb-3 wow animate__animated animate__fadeInUp animate__fast">
                                     <div class=" overflow-hidden bg-light rounded-3 position-relative">
-                                        <img height="200px" src="./images/bg-hero.jpg"
+                                        <img height="200px" src="./assets/img/bg-hero.jpg"
                                             class="card-img-top object-cover-center bg-card-purpose" alt="...">
                                         <div
                                             class="popup position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
@@ -520,7 +537,7 @@
                 <div class="row">
                     <div class="col-md-6 my-auto d-md-block d-none">
                         <img class="img-fluid wow animate__animated animate__fadeInLeft animate__backInLeft my-4"
-                            src="./images/Logo tiga.png" width="500px" alt="join_freshgo" data-wow-offset="100">
+                            src="./assets/img/Logo tiga.png" width="500px" alt="join_freshgo" data-wow-offset="100">
 
                     </div>
                     <div class="col-md-6 my-auto ">
@@ -591,8 +608,9 @@
                         </div>
                     </div>
                     <div class="col-md-6 ">
-                        <img class="img-fluid wow animate__animated animate__backInRight" src="./images/scm-vector.png"
-                            alt="supply chain management freshgo" data-wow-offset="150">
+                        <img class="img-fluid wow animate__animated animate__backInRight"
+                            src="./assets/img/scm-vector.png" alt="supply chain management freshgo"
+                            data-wow-offset="150">
                         <a href='https://www.freepik.com/vectors/cartoon'
                             class="text-black-50 fs-8 text-decoration-none text-end fst-italic">Cartoon vector created
                             by
@@ -619,7 +637,7 @@
                             <div class="d-md-flex">
                                 <div class="image me-3">
                                     <img width="60px" height="60px" class="mb-2"
-                                        src="./images/freshgo-cloud-warehouse.svg" alt="frehsgo cloud warehouse">
+                                        src="./assets/img/freshgo-cloud-warehouse.svg" alt="frehsgo cloud warehouse">
                                 </div>
                                 <div>
                                     <h6 class="fw-bold">Freshgo Cloud Warehouse</h6>
@@ -641,7 +659,7 @@
                             data-wow-delay="0.4s" data-wow-offset="150">
                             <div class="d-md-flex">
                                 <div class="image me-3">
-                                    <img width="60px" height="60px" class="mb-2" src="./images/freshgo-reseller.svg"
+                                    <img width="60px" height="60px" class="mb-2" src="./assets/img/freshgo-reseller.svg"
                                         alt="freshgo reseller">
                                 </div>
                                 <div class="">
@@ -662,7 +680,7 @@
                             data-wow-delay="0.6s" data-wow-offset="150">
                             <div class="d-md-flex">
                                 <div class="image me-3">
-                                    <img width="60px" height="60px" class="mb-2" src="./images/freshgo-umkm.svg"
+                                    <img width="60px" height="60px" class="mb-2" src="./assets/img/freshgo-umkm.svg"
                                         alt="freshgo umkm">
                                 </div>
                                 <div class="">
@@ -699,45 +717,45 @@
                         <div
                             class="bg-light rounded-3 position-relative overflow-hidden scale-bg-card-hover mb-3 wow animate__animated animate__fadeInUp animate__fast">
                             <img class="position-absolute w-100 h-100 object-cover-center bg-card-purpose"
-                                src="./images/bg-purpose-1.jpeg" alt="patternpad">
+                                src="./assets/img/bg-purpose-1.jpeg" alt="patternpad">
                             <div class="position-relative p-4 linear-white text-white purpose-item">
                                 <h3 class="fs-5 fw-bold">Corporate Purpose</h3>
                                 <p>Kebutuhan atas perusahaan atau bisnis</p>
                                 <img class="position-absolute end-0 bottom-0 p-3 purpose-icon opacity-50 hover-opacity-1"
-                                    width="100px" src="./images/rantai.png" alt="Corporate">
+                                    width="100px" src="./assets/img/rantai.png" alt="Corporate">
                             </div>
                         </div>
                         <div class="bg-light rounded-3 position-relative overflow-hidden scale-bg-card-hover mb-3 wow animate__animated animate__fadeInUp animate__fast"
                             data-wow-delay="0.2">
                             <img class="position-absolute w-100 h-100 object-cover-center bg-card-purpose"
-                                src="./images/bg-purpose-2.jpeg" alt="patternpad">
+                                src="./assets/img/bg-purpose-2.jpeg" alt="patternpad">
                             <div class="position-relative p-4 linear-white text-white purpose-item">
                                 <h3 class="fs-5 fw-bold">Hotel</h3>
                                 <p>Siap antar untuk kebutuhan hotel</p>
                                 <img class="purpose-icon position-absolute end-0 bottom-0 p-3 opacity-50 hover-opacity-1"
-                                    width="100px" src="./images/hotel.png" alt="Hotel">
+                                    width="100px" src="./assets/img/hotel.png" alt="Hotel">
                             </div>
                         </div>
                         <div class="bg-light rounded-3 position-relative overflow-hidden scale-bg-card-hover mb-3 wow animate__animated animate__fadeInUp animate__fast"
                             data-wow-delay="0.4">
                             <img class="position-absolute w-100 h-100 object-cover-center bg-card-purpose"
-                                src="./images/bg-purpose-3.jpeg" alt="patternpad">
+                                src="./assets/img/bg-purpose-3.jpeg" alt="patternpad">
                             <div class="position-relative p-4 linear-white text-white purpose-item">
                                 <h3 class="fs-5 fw-bold">Restaurant</h3>
                                 <p>Kami menyediakan kebutuhan yang tentunya segar untuk restaurant</p>
                                 <img class="position-absolute end-0  purpose-icon bottom-0 p-3 opacity-50 hover-opacity-1"
-                                    width="100px" src="./images/resta.png" alt="Restaurant">
+                                    width="100px" src="./assets/img/resta.png" alt="Restaurant">
                             </div>
                         </div>
                         <div class="bg-light rounded-3 position-relative overflow-hidden scale-bg-card-hover mb-3 wow animate__animated animate__fadeInUp animate__fast"
                             data-wow-delay="0.6">
                             <img class="position-absolute w-100 h-100 object-cover-center bg-card-purpose"
-                                src="./images/bg-purpose-4.jpeg" alt="patternpad">
+                                src="./assets/img/bg-purpose-4.jpeg" alt="patternpad">
                             <div class="position-relative p-4 linear-white text-white purpose-item">
                                 <h3 class="fs-5 fw-bold">Catering</h3>
                                 <p>Kebutuhan untuk catering dan sebagainya</p>
                                 <img class="position-absolute end-0 bottom-0 p-3 purpose-icon opacity-50 hover-opacity-1"
-                                    width="100px" src="./images/catering.png" alt="Catering">
+                                    width="100px" src="./assets/img/catering.png" alt="Catering">
                             </div>
                         </div>
                     </div>
@@ -863,13 +881,14 @@
                 </div>
         </section>
         <!--Testimoni-->
+
         <!--bergabung-->
         <section class="py-5 px-md-0 px-3 join">
             <div class="container">
-                <div class="row flex-md-row-reverse">
+                <div class="row flex-md-row-reverse min-vh-100">
                     <div class="col-md-6 my-auto ">
                         <h2
-                            class="fw-bold display-4 lh-base mb-4 text-white wow animate__animated animate__fadeInRight animate_faster">
+                            class="fw-bold display-3 lh-base mb-4 text-white wow animate__animated animate__fadeInRight animate_faster">
                             Ayo ! Bergabung bersama Ekosistem Kami<span class="text-teal">.</span>
 
                         </h2>
@@ -889,7 +908,7 @@
                     </div>
                     <div class="col-md-6 my-auto">
                         <img class="img-fluid wow animate__animated animate__fadeInLeft animate__backInLeft"
-                            src="./images/join.png" alt="join_freshgo" data-wow-offset="100">
+                            src="./assets/img/join.png" alt="join_freshgo" data-wow-offset="100">
                         <a href='https://www.freepik.com/vectors/people'
                             class="text-decoration-none fs-8 fst-italic text-white">People vector created by
                             pch.vector
@@ -899,38 +918,41 @@
                 </div>
             </div>
         </section>
-        <!--freshgo-->
+        <!--bergabung-->
+
+        <!--freshgo partner-->
         <section class="partner pb-5">
             <div class="container px-md-0 px-3">
                 <div class="row py-5">
                     <div class="col-md-4 mx-auto wow animate__animated animate__zoomIn animate__faster"
                         data-wow-delay="0.2s">
                         <img class="mb-4 rounded-3 ratio ratio-16x9" width="100" height="120"
-                            src="./images/partner-1.png" alt="frui">
+                            src="./assets/img/partner-1.png" alt="frui">
                     </div>
                     <div class="col-md-4 mx-auto wow animate__animated animate__zoomIn animate__faster"
                         data-wow-delay="0.4s">
                         <img class="mb-4 rounded-3 ratio ratio-16x9" width="100" height="120"
-                            src="./images/partner-2.png" alt="midnight beauty">
+                            src="./assets/img/partner-2.png" alt="midnight beauty">
                     </div>
                     <div class="col-md-4 mx-auto wow animate__animated animate__zoomIn animate__faster"
                         data-wow-delay="0.6s">
                         <img class="mb-4 rounded-3 ratio ratio-16x9" width="100" height="120"
-                            src="./images/partner-3.png" alt="fresh co">
+                            src="./assets/img/partner-3.png" alt="fresh co">
                     </div>
                     <div class="col-md-4 mx-auto wow animate__animated animate__zoomIn animate__faster"
                         data-wow-delay="0.8s">
                         <img class="mb-4 rounded-3 ratio ratio-16x9" width="100" height="120"
-                            src="./images/partner-4.png" alt="sagama">
+                            src="./assets/img/partner-4.png" alt="sagama">
                     </div>
                     <div class="col-md-4 mx-auto wow animate__animated animate__zoomIn animate__faster"
                         data-wow-delay="1s">
                         <img class="mb-4 rounded-3 ratio ratio-16x9" width="100" height="120"
-                            src="./images/partner-5.png" alt="sunpride">
+                            src="./assets/img/partner-5.png" alt="sunpride">
                     </div>
                 </div>
             </div>
         </section>
+        <!--freshgo partner-->
 
         <!--youtube-->
         <section class="bg-dark-teal py-5">
@@ -965,6 +987,7 @@
         <!--youtube-->
 
     </main>
+
     <footer class="bg-teal text-white pt-5 footer sticky-md-top">
         <div class="container pt-5 px-md-0 px-4">
             <div class="row">
@@ -1052,33 +1075,13 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-        </script>
-    <script defer src="./plugins/sidebar.js"></script>
-    <script src="./plugins/swiper-bundle.min.js"></script>
-    <script src="./plugins/wow.min.js"></script>
 
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/sidebar.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <script>
         new WOW().init()
-        var heroSlider = new Swiper('.hero-slider', {
-            // Optional parameters
-            autoplay: {
-                delay: 3000
-            },
-
-
-            autoHeight: true,
-
-            direction: 'horizontal',
-            loop: true,
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-                dynamicBullets: true,
-            },
-        });
         var cities = new Swiper('.cities', {
             // Optional parameters
             autoplay: {
@@ -1129,8 +1132,6 @@
             autoplay: {
                 delay: 3000
             },
-
-            autoHeight: true,
 
             speed: 1000,
 

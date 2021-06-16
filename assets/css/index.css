@@ -26,10 +26,10 @@ body{
       transition: transform .3s cubic-bezier(0.72, 0.02, 0.15, 0.99);
   }
 .mitra{
-    background-image: url(../images/tree.png); background-size: cover; background-position: 0px -60px
+    background-image: url(../../assets/img/tree.png); background-size: cover; background-position: 0px -60px
 }
 .footer{
-    background-image: url(../images/footer-bg.png); background-repeat: no-repeat; background-size: contain;
+    background-image: url(../../assets/img/footer-bg.png); background-repeat: no-repeat; background-size: contain;
 }
 .c-card{
     min-height: 13rem;
@@ -43,7 +43,7 @@ body{
 }
 
 .partner{
-    background-image: url(../images/bg-partner.png); 
+    background-image: url(../../assets/img/bg-partner.png); 
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: bottom;
@@ -66,14 +66,14 @@ body{
 }
 
 .bg-hero{
-    background: linear-gradient(0deg, rgba(73, 175, 162, 0.85), rgba(73, 175, 162, 0.85)), url(../images/bg-hero.svg);
+    background: linear-gradient(0deg, rgba(73, 175, 162, 0.85), rgba(73, 175, 162, 0.85)), url(../../assets/img/bg-hero.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
 }
 
 .join{
-    background: linear-gradient(0deg, rgba(73, 175, 162, 0.95), rgba(73, 175, 162, 0.95)), url(../images/bg-join.svg);
+    background: linear-gradient(0deg, rgba(73, 175, 162, 0.95), rgba(73, 175, 162, 0.95)), url(../../assets/img/bg-join.svg);
 }
 
 .fs-7{
@@ -163,7 +163,7 @@ body{
 }
 
 .bg-colaboration{
-    background: linear-gradient(0deg, rgba(24, 66, 97, 0.9), rgba(24, 66, 97, 0.9)), url('../images/bg.jpg');
+    background: linear-gradient(0deg, rgba(24, 66, 97, 0.9), rgba(24, 66, 97, 0.9)), url('../../assets/img/bg.jpg');
     background-size: cover;
     background-position: bottom;
 }
@@ -193,7 +193,7 @@ body{
 }
 
 .supply{
-    background: linear-gradient(90deg, rgba(73, 175, 162, .8), rgba(73, 175, 162, 1)), url(../images/bg-hero.jpg);
+    background: linear-gradient(90deg, rgba(73, 175, 162, .8), rgba(73, 175, 162, 1)), url(../../assets/img/bg-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -230,7 +230,7 @@ body{
 }
 
 .purpose{
-    background-image: url(../images/bg-purpose.png);
+    background-image: url(../../assets/img/bg-purpose.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
