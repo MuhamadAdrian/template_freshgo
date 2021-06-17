@@ -271,7 +271,15 @@ body{
 }
 
 .whatsapp-button{
+    visibility: hidden;
+    transform: scale(0);
     z-index: 2000 !important;
+    transition: transform .5s cubic-bezier(0.72, 0.02, 0.15, 0.99);
+}
+
+.whatsapp-button.show{
+    visibility: visible;
+    transform: scale(1);
 }
 
 .content-blog{
@@ -284,6 +292,11 @@ body{
     letter-spacing: -0.003em
 }
 @media only screen and (min-width: 768px) {
+    .whatsapp-button{
+        display: block ;
+        visibility: visible ;
+        transform: scale(1);
+    }
     .bg-hero{
         background-attachment: fixed;
     }

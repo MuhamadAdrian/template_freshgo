@@ -10,6 +10,8 @@ const dropdownMobileTrigger = document.querySelector(".dropdown-mobile");
 
 const arrow = document.querySelector(".arrow");
 
+const whatsappButton = document.querySelector(".whatsapp-button");
+
 let isOpened = false;
 
 dropdownMobileTrigger.addEventListener("click", () => {
@@ -27,9 +29,11 @@ dropdownMobileTrigger.addEventListener("click", () => {
 fab.addEventListener("click", () => {
   overlay.classList.toggle("show");
   sidebar.classList.toggle("show");
+  whatsappButton.classList.toggle("show");
 });
 
 overlay.addEventListener("click", () => {
   overlay.classList.toggle("show");
   sidebar.classList.toggle("show");
+  whatsappButton.classList.toggle("show");
 });
