@@ -264,7 +264,7 @@ body{
 .hover-bg-light-darken:hover{
     background-color: rgb(172, 198, 255) !important;
 }
-.form-control.custom{
+.form-control.custom, .form-select.custom{
     background-color: #f5f5f5;
     border: none;
     padding: 15px 20px;
@@ -290,6 +290,31 @@ body{
     font-size: 18px;
     line-height: 28px;
     letter-spacing: -0.003em
+}
+.bullets{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 1;
+}
+.bullets::after{
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50px;
+}
+.timeline{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    background-color: #49AFA2;
+    width: 3px;
 }
 @media only screen and (min-width: 768px) {
     .whatsapp-button{
