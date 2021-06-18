@@ -225,41 +225,55 @@
 
     <main class="position-relative overflow-hidden">
         <!--HERO SECTION-->
-        <section class="px-md-0 px-3 pt-5 bg-hero">
-            <div class="container pt-md-0 pt-5">
-                <div class="row pt-md-0 pt-5 min-vh-100">
-                    <div class="col-md-6 my-md-auto mb-5 wow animate__animated animate__bounceInLeft"
-                        data-wow-duration="1s">
-                        <div class="swiper-container text-hero">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <h1 class="display-2 fw-bold text-white mb-4">Salam Hangat dari Kota Bandung</h1>
-                                    <p class="fs-5 text-white">Kota yang Sejuk Dilingkung Gunung</p>
-                                </div>
-                                <div class="swiper-slide">
+        <section class="px-md-0 pt-5 position-relative mt-3">
+            <div class="swiper-container text-hero">
+                <div class="swiper-wrapper vh-100">
+                    <div class="swiper-slide">
+                        <img src="./assets/img/bg-hero-2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/bg-hero-4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/bg-hero-5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="position-absolute w-100 h-100 top-0 start-0">
+                <div class="container">
+                    <div class="row min-vh-100">
+                        <div class="col-md-6 my-auto px-md-0 px-3">
+                            <div class="swiper-container text-hero">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <h1 class="display-2 fw-bold text-white mb-4">Salam Hangat dari Kota Bandung
+                                        </h1>
+                                        <p class="fs-5 text-white">Kota yang Sejuk Dilingkung Gunung</p>
+                                    </div>
+                                    <div class="swiper-slide">
 
-                                    <h1 class="display-2 fw-bold text-white mb-4">Food Supplies & Online Groceries
-                                    </h1>
-                                    <p class="fs-3 text-white">Mempertemukan kebutuhan pelanggan dengan standar barang
-                                        yang <span class="fw-bold">berkulitas tinggi</span> </p>
+                                        <h1 class="display-2 fw-bold text-white mb-4">Food Supplies & Online Groceries
+                                        </h1>
+                                        <p class="fs-3 text-white">Mempertemukan kebutuhan pelanggan dengan standar
+                                            barang
+                                            yang <span class="fw-bold">berkulitas tinggi</span> </p>
+                                        <button
+                                            class="btn bg-dark-teal shadow bg-dark-teal-hover px-4 py-3 text-white rounded-pill mt-3"
+                                            href="#">Gabung ke FCW
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                    viewBox="0 0 24 24" width="24px" fill="currentColor">
+                                                    <path d="M0 0h24v24H0z" fill="none" />
+                                                    <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <button
-                            class="btn bg-dark-teal shadow bg-dark-teal-hover px-4 py-3 text-white rounded-pill mt-3"
-                            href="#">Join
-                            To
-                            Ecosystem <span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24"
-                                    width="24px" fill="currentColor">
-                                    <path d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z" />
-                                </svg></span></button>
                     </div>
-                    <div class="col-md-6 my-md-auto wow animate__animated animate__jackInTheBox" data-wow-delay="0.5s">
-
-                    </div>
-
-
                 </div>
             </div>
         </section>
@@ -1150,13 +1164,12 @@
             autoplay: {
                 delay: 3000
             },
+            speed: 500,
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true
+            }
 
-            speed: 1000,
-
-            effect: 'fade',
-            fadeEffect: {
-                crossFade: true
-            },
         });
     </script>
     <script>

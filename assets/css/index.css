@@ -66,10 +66,9 @@ body{
 }
 
 .bg-hero{
-    background: linear-gradient(0deg, rgba(73, 175, 162, 0.85), rgba(73, 175, 162, 0.85)), url(../../assets/img/bg-hero.svg);
-    background-size: cover;
+    background-image: url(../img/bg-hero-2.jpg);
     background-repeat: no-repeat;
-    background-position: left;
+    background-size: cover;
 }
 
 .join{
