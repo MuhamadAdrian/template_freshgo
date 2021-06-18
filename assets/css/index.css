@@ -66,9 +66,11 @@ body{
 }
 
 .bg-hero{
-    background-image: url(../img/bg-hero-2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../../assets/img/mobile-bg-hero.png); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: right;
+    color: #333 !important;
 }
 
 .join{
@@ -322,7 +324,9 @@ body{
         transform: scale(1);
     }
     .bg-hero{
-        background-attachment: fixed;
+        background-image: url(../../assets/img/bg-hero-2.png); 
+        background-position: -50px; 
+        color: white;
     }
     .w-md-50{
         width: 50%;
