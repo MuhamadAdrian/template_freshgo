@@ -19,6 +19,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/animate.min.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/index.css" />
 
     <title>Freshgo Indonesia | Farm Supplies & Online Groceries Indonesia</title>
@@ -232,7 +233,7 @@
                     </div>
                     <div class="col-md-6 my-auto ">
                         <h2
-                            class="fw-bold lh-base mb-4 text-white wow animate__animated animate__fadeInRight animate__faster">
+                            class="fw-bold display-3 lh-base mb-4 text-white wow animate__animated animate__fadeInRight animate__faster">
                             Apa itu FreshGo ?<span class="text-teal">.</span></h2>
                         <p class="text-white wow animate__animated animate__fadeInRight animate__faster"
                             data-wow-delay="0.3s">Freshgo terdiri dari 2 suku kata. <span class="fw-bold">Fresh &
@@ -314,11 +315,93 @@
             </div>
         </section>
         <!--SUPPLY CHAIN MANAGEMENT-->
+
+        <!--Our Mission-->
+        <section class="px-md-0 px-3 py-5">
+            <div class="container">
+                <div class="row flex-md-row-reverse gx-5">
+                    <div class="col-md-6">
+                        <h2 class="display-3 fw-bold">Our Mission <span class="text-teal">.</span></h2>
+                        <p class="fs-5 lh-base">Memutus mata rantai yang terlalu panjang sehingga buah dan sayur mahal
+                            dan tidak
+                            segar,
+                            membeli produk UMKM dan hasil panen petani setempat, konsep berbelanja sambil berbagi,
+                            memberikan kemudahan menyiapkan kebutuhan harian yang sehat dan segar secara instant
+                            delivery</p>
+                    </div>
+                    <div class="col-md-6 position-relative">
+                        <div class="row row-cols-2 g-0">
+                            <div class="col">
+                                <img src="./assets/img/bg-hero-1.jpg"
+                                    class=" object-cover-center wow animate__animated animate__zoomIn animate__faster"
+                                    width="100%" height="250px" alt="" data-wow-offset="100">
+                            </div>
+                            <div class="col">
+                                <img src="./assets/img/bg-hero-2.jpg" data-wow-delay="0.1s" data-wow-offset="100"
+                                    class=" object-cover-center wow animate__animated animate__zoomIn animate__faster"
+                                    width="100%" height="250px" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="./assets/img/bg-hero-3.jpg" data-wow-delay="0.2s" data-wow-offset="100"
+                                    class=" object-cover-center wow animate__animated animate__zoomIn animate__faster"
+                                    width="100%" height="250px" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="./assets/img/bg-hero-4.jpg" data-wow-delay="0.3s" data-wow-offset="100"
+                                    class=" object-cover-center wow animate__animated animate__zoomIn animate__faster"
+                                    width="100%" height="250px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Our Mission-->
+
+        <!--charity program-->
+        <section
+            style="background-image: url(./assets/img/bg-charity.png); background-repeat: no-repeat; background-size: cover;"
+            class="px-md-0 px-3 py-5">
+            <div class="container-fluid py-5">
+                <h2 class="display-4 text-center lh-base">"Tidak Hanya Mencari Keuntungan. Namun Juga Memberikan Manfaat
+                    Bagi
+                    Banyak
+                    Orang"</h2>
+            </div>
+        </section>
+        <!--charity program-->
+
+        <!--charity gallery-->
+        <section
+            style="background-image: url(./assets/img/bg-charity.png); background-repeat: no-repeat; background-size: cover;"
+            class="px-md-0 px-3">
+            <div class="container">
+                <div class="swiper-container charity-gallery">
+                    <div class="swiper-wrapper py-5">
+                        <div class="swiper-slide" style=" height: 400px;">
+                            <img class="object-cover-center" width="100%" height="400px"
+                                src="./assets/img/bg-hero-1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide" style=" height: 400px;">
+                            <img class="object-cover-center" width="100%" height="400px" src="./assets/img/bg-hero.jpg"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide" style=" height: 400px;">
+                            <img class="object-cover-center" width="100%" height="400px" src="./assets/img/bg-hero.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!--charity gallery-->
     </main>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/wow.min.js"></script>
     <script src="./assets/js/sidebar.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <script>
         new WOW({
             boxClass: 'wow',      // default
@@ -327,6 +410,25 @@
             mobile: false,       // default
             live: true        // default
         }).init()
+    </script>
+    <script>
+        let charityGallery = new Swiper(".charity-gallery", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 1.5,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true
+            },
+        })
     </script>
     <script>
         let copyright = document.querySelector(".copyright");
