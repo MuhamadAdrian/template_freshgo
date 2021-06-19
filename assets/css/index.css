@@ -317,6 +317,7 @@ body{
     background-color: #49AFA2;
     width: 3px;
 }
+
 @media only screen and (min-width: 768px) {
     .whatsapp-button{
         display: block ;
