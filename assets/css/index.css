@@ -163,12 +163,6 @@ body{
     z-index: 1031;
 }
 
-.bg-colaboration{
-    background: linear-gradient(0deg, rgba(24, 66, 97, 0.9), rgba(24, 66, 97, 0.9)), url('../../assets/img/bg.jpg');
-    background-size: cover;
-    background-position: bottom;
-}
-
 .border-teal{
     border-color: #49AFA2 !important;
 }
@@ -193,11 +187,6 @@ body{
     padding: 10px;
 }
 
-.supply{
-    background: linear-gradient(90deg, rgba(73, 175, 162, .8), rgba(73, 175, 162, 1)), url(../../assets/img/bg-hero.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .mitra-card{
     transition: transform .5s cubic-bezier(0.72, 0.02, 0.15, 0.99);
@@ -320,6 +309,13 @@ body{
 .date-galeri{
     position: sticky;
     top: 80px;
+}
+.c-category{
+    border: 2px solid #49AFA2;
+    color: #49AFA2;
+}
+.promo{
+    background: linear-gradient(45deg, rgba(224, 165, 89, 0.932), rgba(228, 226, 120, 0.932)), url(../../assets/img/bg-join.svg);
 }
 @media only screen and (min-width: 768px) {
     .whatsapp-button{
