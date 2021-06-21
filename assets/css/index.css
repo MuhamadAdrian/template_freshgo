@@ -321,10 +321,15 @@ body{
     transition: filter 0.5s
 }
 .hover-color:hover{
-filter: grayscale(0);
+    filter: grayscale(0);
 }
 .black-white{
     filter: grayscale(1);
+}
+.bg-our-team{
+    background-image: url(../img/bg-our-team.png);
+    background-size: cover;
+    background-position: center;
 }
 @media only screen and (min-width: 768px) {
     .whatsapp-button{
