@@ -317,6 +317,15 @@ body{
 .promo{
     background: linear-gradient(45deg, rgba(224, 165, 89, 0.932), rgba(228, 226, 120, 0.932)), url(../../assets/img/bg-join.svg);
 }
+.hover-color{
+    transition: filter 0.5s
+}
+.hover-color:hover{
+filter: grayscale(0);
+}
+.black-white{
+    filter: grayscale(1);
+}
 @media only screen and (min-width: 768px) {
     .whatsapp-button{
         display: block ;
