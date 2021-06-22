@@ -7,6 +7,9 @@ a{
 body{
     font-family: 'Poppins', sans-serif;
 }
+.text-dark-700{
+    color: #353434;
+}
 .slide-on-hover{
     transition: transform .3s ease-in-out;
 }
@@ -148,7 +151,6 @@ body{
 
 .nav-link.active{
     color: #4ab0a3 !important;
-    background-color: #fafafafa;
 }
 
 .dropdown-mobile{
@@ -201,7 +203,7 @@ body{
     width: 500px;
 }
 .linear-white{
-    background: linear-gradient(90deg, rgba(73, 175, 162, 0.98), rgba(53, 105, 165, 0.8));
+    background: linear-gradient(90deg, #073455de, rgba(53, 105, 165, 0.904));
 }
 .opacity-50{
     opacity: .45;
@@ -350,6 +352,9 @@ body{
     }
     .fs-md-3{
         font-size: 24px;
+    }
+    .fs-md-5{
+        font-size: 1.25rem !important;
     }
     .benefits{
         width: 40rem;
