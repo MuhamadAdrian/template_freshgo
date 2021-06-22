@@ -1,4 +1,4 @@
-const fab = document.querySelector("#fab");
+const hamburger = document.querySelector("#hamburger");
 
 const overlay = document.querySelector(".overlay-sidebar");
 
@@ -26,7 +26,7 @@ dropdownMobileTrigger.addEventListener("click", () => {
   }
 });
 
-fab.addEventListener("click", () => {
+hamburger.addEventListener("click", () => {
   overlay.classList.toggle("show");
   sidebar.classList.toggle("show");
   whatsappButton.classList.toggle("show");
